@@ -88,7 +88,7 @@ class TicTacToe
      end
      return false
    end
-   
+
    def full?
      board.all? {|x| x == "X" || x == "O"}
    end
@@ -96,7 +96,7 @@ class TicTacToe
    def draw?
      if !won? && full?
        return true
-     else 
+     else
        return false
      end
    end

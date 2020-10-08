@@ -101,12 +101,3 @@ class TicTacToe
      end
    end
 end
-
-
-
-
-if !won? && full?
-return true
-else
-return false
-end

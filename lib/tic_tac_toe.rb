@@ -72,7 +72,6 @@ class TicTacToe
    end
 
    def won?
-     wnarry = []
      WIN_COMBINATIONS.each do |ea|
        row1 = ea[0]
        row2 = ea[1]
@@ -85,19 +84,10 @@ class TicTacToe
          return ea
        elsif (b1 == "O" && b2 == "O" && b3 == "O")
          return ea
+       end
      end
      return false
    end
-   if position_1 == "X" && position_2 == "X" && position_3 == "X"
-    return win_combo
-  elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
-    return win_combo
-  end
-
-
-
-
-
 
 
    def full?

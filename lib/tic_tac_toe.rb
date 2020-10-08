@@ -82,7 +82,7 @@ class TicTacToe
        b1 = board[row1]
        b2 = board[row2]
        b3 = board[row3]
-       b1 == b2 && b2 == b3 && position_taken?(board, row1)
+       puts b1 == b2 && b2 == b3 && position_taken?(board, row1)
      end
    end
 

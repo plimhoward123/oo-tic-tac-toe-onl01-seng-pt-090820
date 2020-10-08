@@ -123,4 +123,12 @@ class TicTacToe
      end
    end
 
+
+   def player
+     until over == true
+       turn
+     end
+     
+
+   end
 end

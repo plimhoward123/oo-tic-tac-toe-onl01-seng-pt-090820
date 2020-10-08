@@ -65,7 +65,7 @@ class TicTacToe
      val = input_to_index(gets.to_i)
      if (valid_move?(val))
        board[val] = current_player
-       puts display_board
+       display_board
      else
        turn
      end
@@ -108,4 +108,19 @@ class TicTacToe
        return false
      end
    end
+
+   def winner
+     winarry = []
+     winarry = won?
+     if winarry == false
+       return nil
+     else 
+       if (board[winarry[0]] == "O")
+         return "O"
+       else
+         return "X"
+       end
+     end
+   end
+     
 end

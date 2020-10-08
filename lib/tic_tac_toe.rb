@@ -35,8 +35,7 @@ class TicTacToe
    end
 
    def input_to_index(num)
-     tab = num.to_i - 1
-     tab
+     num.to_i - 1
    end
 
    def move(num,plyr)
@@ -82,9 +81,24 @@ class TicTacToe
        b1 = board[row1]
        b2 = board[row2]
        b3 = board[row3]
-       puts b1 == b2 && b2 == b3 && position_taken?(board, row1)
+       if (b1 == "X" && b2 == "X" && b3 == "X")
+         return ea
+       elsif (b1 == "O" && b2 == "O" && b3 == "O")
+         return ea
      end
+     return false
    end
+   if position_1 == "X" && position_2 == "X" && position_3 == "X"
+    return win_combo
+  elsif position_1 == "O" && position_2 == "O" && position_3 == "O"
+    return win_combo
+  end
+
+
+
+
+
+
 
    def full?
      board.all? {|x| x == "X" || x == "O"}

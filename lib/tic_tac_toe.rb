@@ -114,7 +114,7 @@ class TicTacToe
      winarry = won?
      if winarry == false
        return nil
-     else 
+     else
        if (board[winarry[0]] == "O")
          return "O"
        else
@@ -122,5 +122,5 @@ class TicTacToe
        end
      end
    end
-     
+
 end
